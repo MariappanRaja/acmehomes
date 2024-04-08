@@ -1,0 +1,205 @@
+.stay-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    padding: 40px; 
+
+
+  }
+  .listing-name {
+    height: 2.2em;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    white-space: normal; 
+  }
+  .stay-card {
+    height: 100%;
+    border: 1px solid #ccc; 
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    FONT-WEIGHT: 600;
+    }
+  
+  .stay-card img {
+    width: 100%;
+  }
+  
+  .stay-details {
+    margin-top: 10px;
+    margin-bottom: auto; 
+  }
+  
+  .stay-card:hover {
+    background-color: #64C0F330;
+  }
+.stay-card h4 {
+  color: #444444;
+  font-size: 14px; 
+  margin-bottom: 10px; 
+  margin: 20px 0; 
+}
+.usually-booked-tag {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 1px solid #64C0F3;
+  background-color: #64C0F330; 
+  color: black;
+  font-size: 12px;
+  margin-right: 8px;
+  position: relative;
+    top: -92%;
+    left: 60%;
+
+}
+
+.stay-card p {
+  color: #6F6F6F; 
+  font-size: 14px; 
+  margin-bottom: 0px;
+}
+
+.App h1 {
+  color: #444444;
+  font-size: 24px;
+  margin-bottom: 10px;
+  padding-left: 40px;
+  padding-top: 40px;
+}
+.App h2 {
+  color: #444444;
+  font-size: 20px; 
+  padding-left: 40px;
+  padding-top: 40px;
+}
+.App h5 {
+  color: #0D7AB5; 
+  font-size: 20px; 
+  margin-top: 10px; 
+  padding-left: 70px;
+}
+.home-icon {
+  font-size: 24px;
+  position: absolute;
+  color: #0D7AB5;
+  margin-left: 40px;
+  margin-top: auto;
+}
+
+.favorite-icon {
+  font-size: 12px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+ }
+
+hr {
+  border: none;
+  border-top: 1px solid #6F6F6F;
+  margin: 10px 0;
+}
+
+.price {
+  font-size: 12px; 
+  position: absolute;
+  bottom: 45px;
+  right: 15px;
+  
+}
+
+@media only screen and (min-width: 768px) {
+  .nearby-stays .pagination {
+    position: relative;
+    right: -115%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .nearby-stays .pagination {
+    position: relative;
+    top: 0%;
+    right: 0%;
+  }
+}
+.full-horizontal-line {
+  border: none;
+  border-top: 1px solid #ccc;
+  width: 100%;
+  margin: 20px 0; 
+}
+
+.nearby-stays .pagination button {
+  background-color: transparent;
+  color: #444444;
+  border: 0.5px solid -	#6F6F6F;
+  padding: 5px 10px;
+  margin: 0 5px;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.nearby-stays .pagination button:hover {
+  color: -	#444444;
+  border-color: -	#444444;
+  -webkit-text-fill-color:#444444
+}
+
+.nearby-stays .pagination button:disabled {
+  color: -	#6F6F6F;
+  border-color: -	#6F6F6F;
+  -webkit-text-fill-color: #ccc;
+  cursor: not-allowed;
+}
+
+.nearby-stays .pagination .name:hover {
+  color: red;
+}
+
+.tag {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  margin-right: 8px;
+}
+.nearby-stays .pagination-info {
+  position: relative;
+  color: #444444;
+  font-size: 14px;
+}
+.low-rate-tag {
+  border: 1px solid #BBA4FB; 
+  background-color: #BBA4FB30;
+  color: black; 
+  position: relative;
+    top: -92%;
+    left: 2%;
+}
+
+@media (max-width: 768px) {
+  .stay-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .stay-list {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 40px;
+  }
+
+  .stay-card {
+    padding: 40px;
+  }  
+  
+}
+
+@media (max-width: 768px) {
+  .tag {
+    font-size: 10px;
+    margin-right: 4px; 
+  }
+}
+
